@@ -31,6 +31,13 @@ nav, #navMenuL ul , #navMenuR ul, #navBarLogo {
     justify-content: center;
 }
 
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
 
 #navMenuL ul li a, #navMenuR ul li a {
 text-decoration: none;
@@ -38,6 +45,20 @@ margin: 0px 20px 0px 20px;
 padding: 10px;
 font-size: 20px;
 text-transform: uppercase;
+color: #fff;
+}
+
+#navMenuL ul li a:hover, #navMenuR ul li a:hover {
+    transition: 500ms;
+    color: var(--red);
+}
+
+#navMenuL ul li a:active, #navMenuR ul li a:active {
+    color: var(--light-brown);
+}
+
+#navMenuL ul li a:visited, #navMenuR ul li a:visited {
+    color: #8b7476;
 }
 
 nav li {

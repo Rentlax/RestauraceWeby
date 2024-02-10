@@ -7,3 +7,40 @@
     --black: #071013;
 }
 
+@font-face {
+    font-family: Kanit-bold;
+    src: url(/Fonts/Kanit/Kanit-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    font-family: Kanit-bold;
+    color: #000;
+}
+
+nav {
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+nav, #navMenuL ul , #navMenuR ul, #navBarLogo {
+    display: flex;
+    justify-content: center;
+}
+
+
+#navMenuL ul li a, #navMenuR ul li a {
+text-decoration: none;
+margin: 0px 20px 0px 20px;
+padding: 10px;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+nav li {
+list-style: none;
+}
+

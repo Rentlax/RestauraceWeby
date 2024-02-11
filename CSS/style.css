@@ -125,7 +125,18 @@ background-color: rgba(0, 0, 0, 0.2);
 #headerButtonL:hover, #headerButtonR:hover {
     color: var(--red);
     transition: 0.4s;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
     border: solid 1px var(--light-brown); 
     transition: 0.4s;
 }
+
+#headerButtonL:active, #headerButtonR:active {
+    background-color: #000;
+}
+
+/*
+ HEADER - END
+
+ MAIN BODY - START 
+*/
+

@@ -12,6 +12,11 @@
     src: url(/Fonts/Kanit/Kanit-Bold.ttf);
 }
 
+@font-face {
+    font-family: Kanit-light;
+    src: url(/Fonts/Kanit/Kanit-Light.ttf);
+}
+
 * {
     margin: 0;
     font-family: Kanit-bold;
@@ -21,9 +26,8 @@
 nav {
     
     padding-top: 32px;
-    padding-bottom: 32px;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 110%);
 }
 
 nav, #navMenuL ul , #navMenuR ul, #navBarLogo {
@@ -46,6 +50,8 @@ padding: 10px;
 font-size: 20px;
 text-transform: uppercase;
 color: #fff;
+text-align: center;
+justify-content: center;
 }
 
 #navMenuL ul li a:hover, #navMenuR ul li a:hover {
@@ -57,9 +63,11 @@ color: #fff;
     color: var(--light-brown);
 }
 
+/*
 #navMenuL ul li a:visited, #navMenuR ul li a:visited {
     color: #8b7476;
 }
+*/
 
 nav li {
 list-style: none;
@@ -70,8 +78,54 @@ list-style: none;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url(/Images/Bckg1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("/Images/Bckg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 0.5s ease-in-out;
+}
+
+.mainContentHeader {
+margin: auto;
+text-align: center;
+margin-top: 12rem;
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+    line-height: 5rem;  
+}
+
+.mainContentHeader p {
+    margin-top: 2rem;
+    font-size: 24px;
+    color: #fff;
+}
+
+.headerButtons {
+    text-align: center;
+    margin: 64px 0 0 0 ;
+}
+
+.headerButton {
+    margin: 30px
+}
+
+#headerButtonL, #headerButtonR{
+font-size: 24px;
+font-family: Kanit-light;
+color: #fff;
+text-decoration: none;
+padding: 10px 20px;
+background-color: rgba(0, 0, 0, 0.2);
+    border: solid 1px #fff;
+}
+
+#headerButtonL:hover, #headerButtonR:hover {
+    color: var(--red);
+    transition: 0.4s;
+    background-color: #000;
+    border: solid 1px var(--light-brown); 
+    transition: 0.4s;
 }

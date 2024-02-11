@@ -8,9 +8,13 @@ function changeBckg() {
         'url(/Images/Bckg6.jpg)',
     ]
 
+    
+
     const div = document.querySelector('.Section_top');
     const bckg = images[Math.floor(Math.random() * images.length)];
-    div.style.backgroundImage = bckg;
+
+    const linearGradient = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))';
+    div.style.backgroundImage = `${linearGradient}, ${bckg}`;
 }
 
-setInterval(changeBckg, 5000)
+setInterval(changeBckg, 10000)
